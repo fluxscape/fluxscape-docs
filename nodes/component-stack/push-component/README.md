@@ -50,10 +50,6 @@ The **Push Component To Stack** node is used together with a [Component Stack](/
 | <span className="ndl-data">Fade In</span>             | {/*##input:tr-fadein##*/}Available for _Popup_ transitions. This indicates if the new top component should fade in ou not during the transition.{/*##input##*/}                                                                                                                                                                                                                                           |
 | <span className="ndl-data">Timing</span>              | {/*##input:tr-timing##*/}This is a timing curve that controls the delay, duration and animation ease of the transition.{/*##input##*/}                                                                                                                                                                                                                                                                    |
 
-<div className="ndl-image-with-background l">
-    <img src="/guides/navigation/transition-params.png"></img>
-</div>
-
 <div className="hidden-props-for-editor">
 
 {/*##input:transition##*/}The type of transition. Can be any of:
