@@ -16,8 +16,11 @@ try {
 }
 ```
 
-#### **`Noodl.Records.query(className,query,options)`**  
-This is an **async** function that will query the database using the query that you provide and return the result or throw an exception if failed. The **query** parameter has the same format as the [advanced query](/nodes/data/cloud-data/query-records#advanced-filters) of the **Query Records** node.
+#### **`Noodl.Records.query(className,query,options)`**
+
+This is an **async** function that will query the database using the query that you provide and return the result or throw an exception if failed.
+
+In the second **query** argument, all the advanced filters can be used, here is a list of [advanced filters](/nodes/data/cloud-data/query-records#advanced-filters) used by the **Query Records** node.
 
 ```javascript
 const results = await Noodl.Records.query("myClass", {
@@ -67,7 +70,7 @@ const res = await Noodl.Records.query(
     sort: ["-createdAt"], // use - to sort descending
     skip: 50,
     limit: 200,
-    count:true,
+    count: true,
   }
 );
 
@@ -117,7 +120,8 @@ const results = await Noodl.Records.query(
 One important note, even though only a select few properties are returned from the cloud service they are merged with any existing properties in the record data model that have previously been fetched. Since all record objects are global to the Noodl application.
 :::
 
-#### **`Noodl.Records.count(className,query)`**  
+#### **`Noodl.Records.count(className,query)`**
+
 This function returns the count of the number of records of a given class, optionally matching a query filter.
 
 ```javascript
@@ -130,7 +134,8 @@ const completedCount = await Noodl.Records.count("myClass", {
 });
 ```
 
-#### **`Noodl.Records.distinct(className,property,query)`**  
+#### **`Noodl.Records.distinct(className,property,query)`**
+
 **Only available in cloud functions**  
 This function returns an array of unique values for a given propery or all records in the database of a given class. Optionally you can suppoly a query filter.
 
@@ -144,7 +149,8 @@ const completedCount = await Noodl.Records.distinct("myClass", "category", {
 });
 ```
 
-#### **`Noodl.Records.fetch(objectOrId,options)`**  
+#### **`Noodl.Records.fetch(objectOrId,options)`**
+
 Use this function to fetch the latest properties of a specific record from the cloud database. It will return the object / record.
 
 ```javascript
@@ -163,12 +169,13 @@ By default fetch will return pointer properties as the string **Id** of the obje
 ```javascript
 // By using include the request will return the pointed to object with all properties instead of
 // just the string Id
-await Noodl.Records.fetch(myRecord,{
-  include:["Customer","Author"]
+await Noodl.Records.fetch(myRecord, {
+  include: ["Customer", "Author"],
 });
 ```
 
-#### **`Noodl.Records.save(objectOrId,properties,options)`**  
+#### **`Noodl.Records.save(objectOrId,properties,options)`**
+
 Use this function to write an existing record to the cloud database. It will attempt to save all properties of the record / object if you don't specify the optional properties argument, if so it will set and save those properties.
 
 ```javascript
@@ -188,7 +195,8 @@ await Noodl.Records.save(myRecord, {
 });
 ```
 
-#### **`Noodl.Records.increment(objectOrId,properties,options)`**  
+#### **`Noodl.Records.increment(objectOrId,properties,options)`**
+
 This function will increment (or decrease) propertis of a certain record saving it to the cloud database in a race condition safe way. That is, normally you would have to first read the current value, modify it and save it to the database. Here you can do it with one operation.
 
 ```javascript
@@ -214,7 +222,8 @@ await Noodl.Records.save(myRecord, null, {
 });
 ```
 
-#### **`Noodl.Records.create(className,properties,options)`**  
+#### **`Noodl.Records.create(className,properties,options)`**
+
 This function will create a new record in the cloud database and return the **Noodl.Object** of the newly created record. If it's unsuccessful it will throw an exception.
 
 ```javascript
@@ -227,7 +236,8 @@ console.log(myNewRecord.SomeProperty);
 
 You can use the **options** agrument to specify access control rules as detailed under **Noodl.Records.save** above.
 
-#### **`Noodl.Records.delete(objectOrId,options)`**  
+#### **`Noodl.Records.delete(objectOrId,options)`**
+
 Use this function to delete an existing record from the cloud database.
 
 ```javascript
@@ -239,7 +249,8 @@ await Noodl.Records.delete(myRecordId, { className: "myClass" });
 await Noodl.Records.delete(Noodl.Objects[myRecordId]);
 ```
 
-#### **`Noodl.Records.addRelation(options)`**  
+#### **`Noodl.Records.addRelation(options)`**
+
 Use this function to add a relation between two records.
 
 ```javascript
@@ -261,7 +272,8 @@ await Noodl.Records.addRelation({
 });
 ```
 
-#### **`Noodl.Records.removeRelation(options)`**  
+#### **`Noodl.Records.removeRelation(options)`**
+
 Use this function to remove a relation between two records.
 
 ```javascript
@@ -283,7 +295,8 @@ await Noodl.Records.removeRelation({
 });
 ```
 
-#### **`Noodl.Records.aggregate(className,aggregates,query)`**  
+#### **`Noodl.Records.aggregate(className,aggregates,query)`**
+
 **Only available in cloud functions**  
 This function will compute a set of aggregates based on properties in the records. It can be limited with a query. You can use the following aggregate functions:
 
