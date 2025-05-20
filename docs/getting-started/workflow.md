@@ -7,7 +7,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Workflow Overview
 
-Let's take a look at the different concepts of the Noodl workflow when building your applications, namely
+Let's take a look at the different concepts of the FluxScape workflow when building your applications, namely
 
 - Building User Interfaces
 - Page Navigation & Components
@@ -21,7 +21,7 @@ Let's take a look at the different concepts of the Noodl workflow when building 
 
 ## Building user interfaces
 
-Any app needs a great **User Interface**. In Noodl it's easy and fast to build dynamic, reactive, beautiful user interfaces using the built in UI Controls. These controls are then arranged and layed out appropriately. Noodl contains a library of highly customizable core UI controls. It's also possible to extend Noodl with your own UI Controls, if needed.
+Any app needs a great **User Interface**. In FluxScape it's easy and fast to build dynamic, reactive, beautiful user interfaces using the built in UI Controls. These controls are then arranged and layed out appropriately. FluxScape contains a library of highly customizable core UI controls. It's also possible to extend FluxScape with your own UI Controls, if needed.
 
 <div className="ndl-video">
     <video width="100%" autoPlay muted loop src={useBaseUrl("/docs/getting-started/basic-concepts/ui-1.mp4")}/>
@@ -45,7 +45,7 @@ When you start building more complete frontends, you will be working with **comp
     <video width="100%" autoPlay muted loop src={useBaseUrl("/docs/getting-started/basic-concepts/nav-1.mp4")}/>
 </div>
 
-It's simple to create page navigation but the system is also flexible enough to build more complex navigation flows, such as nested navigation. Noodl supports state of the art web app navigation, with permalinks and encoding of data in URLs. Here is a short overview of concepts important for building pages and navigation:
+It's simple to create page navigation but the system is also flexible enough to build more complex navigation flows, such as nested navigation. FluxScape supports state of the art web app navigation, with permalinks and encoding of data in URLs. Here is a short overview of concepts important for building pages and navigation:
 
 - The **Page**, **Page Router** and **Navigate** nodes are the essence of the navigation system. Learn how to build basic page navigation in this [guide](/docs/guides/navigation/basic-navigation) and more advanced multi level navigation [here](/docs/guides/navigation/multi-level-navigation).
 
@@ -53,27 +53,27 @@ It's simple to create page navigation but the system is also flexible enough to 
 
 ## Actions
 
-An important concept in Noodl, as briefly shown above, is **action nodes**. These nodes perform some sort of action when triggered by a signal, for example, from a UI control (such as a button click) or from another action node (such as when an action has completed successfully or failed). Noodl contains a wide variety of action nodes for most common basic tasks, including **Navigation** and **Reading and Writing Data**.
+An important concept in FluxScape, as briefly shown above, is **action nodes**. These nodes perform some sort of action when triggered by a signal, for example, from a UI control (such as a button click) or from another action node (such as when an action has completed successfully or failed). FluxScape contains a wide variety of action nodes for most common basic tasks, including **Navigation** and **Reading and Writing Data**.
 
 ![](/docs/getting-started/basic-concepts/connecting-nodes.gif)
 
-Connections between nodes is a core concept in Noodl, this is how you connect your user interface to data and actions.
+Connections between nodes is a core concept in FluxScape, this is how you connect your user interface to data and actions.
 
 ## Working with data
 
-When you have built some of your frontend, added pages, components and navigation it is time to connect dynamic data to your user interfaces. This is what makes your application come alive, and in Noodl you have a neat visual way to build modern reactive user interfaces.
+When you have built some of your frontend, added pages, components and navigation it is time to connect dynamic data to your user interfaces. This is what makes your application come alive, and in FluxScape you have a neat visual way to build modern reactive user interfaces.
 
 <div className="ndl-video">
     <video width="100%" autoPlay muted loop src={useBaseUrl("/docs/getting-started/basic-concepts/data-1.mp4")}/>
 </div>
 
-There are three basic concepts for data in Noodl, the **Variable**, **Object** and **Array** nodes. You can learn more about how to work with these [here](/docs/guides/data/overview).
+There are three basic concepts for data in FluxScape, the **Variable**, **Object** and **Array** nodes. You can learn more about how to work with these [here](/docs/guides/data/overview).
 
-A very common pattern in web applications frontends are different types of lists or other dynamic repeating content. Learn how to do that in Noodl [here](/docs/guides/data/list-basics).
+A very common pattern in web applications frontends are different types of lists or other dynamic repeating content. Learn how to do that in FluxScape [here](/docs/guides/data/list-basics).
 
 ## Business Logic
 
-As mentioned above you use **action nodes** to perform some sort of business logic action in Noodl. There are a wide variety of action nodes built in for most basic tasks such as navigating between pages, or storing data in the database. Data and signals from your UI controls are connected to your action nodes, and you can connect them together to make flows.
+As mentioned above you use **action nodes** to perform some sort of business logic action in FluxScape. There are a wide variety of action nodes built in for most basic tasks such as navigating between pages, or storing data in the database. Data and signals from your UI controls are connected to your action nodes, and you can connect them together to make flows.
 
 <div className="ndl-video">
     <video width="100%" autoPlay muted loop src={useBaseUrl("/docs/getting-started/basic-concepts/actions-1.mp4")}/>
@@ -85,17 +85,17 @@ But most applications require some sort of more advanced business logic, for ins
     <video width="100%" autoPlay muted loop src={useBaseUrl("/docs/getting-started/basic-concepts/edit-code.mp4")}/>
 </div>
 
-Not a skilled software developer? Don't worry; the philosophy of Noodl is to focus on the code that matters and remove much of the unnecessary complexities of software development. If you have a basic knowledge of JavaScript, you will go a long way with Noodl.
+Not a skilled software developer? Don't worry; the philosophy of FluxScape is to focus on the code that matters and remove much of the unnecessary complexities of software development. If you have a basic knowledge of JavaScript, you will go a long way with FluxScape.
 
 ## The cloud services
 
-Now it's time to take a look at the second part of the Noodl platform, the cloud services. This is an important piece of any web application. You can create and manage cloud databases, or cloud services as they are refered to as, from within your Noodl project.
+Now it's time to take a look at the second part of the FluxScape platform, the cloud services. This is an important piece of any web application. You can create and manage cloud databases, or cloud services as they are refered to as, from within your FluxScape project.
 
 <div className="ndl-video">
     <video width="100%" autoPlay muted loop src={useBaseUrl("/docs/getting-started/basic-concepts/cloud-1.mp4")}/>
 </div>
 
-The Noodl cloud services will provide your applications with several important functions:
+The FluxScape cloud services will provide your applications with several important functions:
 
 - **Reading and Writing Data**: You can create **classes** to store **records**, which can then be read, filtered, and presented in your application. Dive in [here](/docs/guides/cloud-data/overview) to start learning about cloud services.
 
@@ -123,7 +123,7 @@ This is very useful for many different functions such as:
 
 ## Collaboration
 
-Finally, as your application grows, you'll want to collaborate with colleagues and friends. Thankfully, Noodl is compatible with version control through Git and will give you a built in Version Control panel after the Project Folder has been pushed to a repo at your preferred Git provider. You can collaborate on a project, work on your individual branches, and merge changes. We aim to incorporate powerful concepts from the software development world into Noodl to ensure you never encounter any limitations.
+Finally, as your application grows, you'll want to collaborate with colleagues and friends. Thankfully, FluxScape is compatible with version control through Git and will give you a built in Version Control panel after the Project Folder has been pushed to a repo at your preferred Git provider. You can collaborate on a project, work on your individual branches, and merge changes. We aim to incorporate powerful concepts from the software development world into FluxScape to ensure you never encounter any limitations.
 
 <div className="ndl-image-with-background">
 
@@ -135,7 +135,7 @@ Learn more about the collaboration and version control capabilities [here](/docs
 
 ## Modules and Prefabs
 
-In Noodl you can also import modules developed by others or develop your own modules. You can find a list of current modules provided by Noodl [here](/library/modules/overview). You can also build your own modules and extensions, for example wrapping existing Javascript libraries. You can read more about it [here](/javascript/extending/overview).
+In FluxScape you can also import modules developed by others or develop your own modules. You can find a list of current modules provided by FluxScape [here](/library/modules/overview). You can also build your own modules and extensions, for example wrapping existing Javascript libraries. You can read more about it [here](/javascript/extending/overview).
 
 <div className="ndl-image-with-background l">
 
@@ -143,7 +143,7 @@ In Noodl you can also import modules developed by others or develop your own mod
 
 </div>
 
-An important concept in Noodl that will take your productivity to the next level is **prefabs**. These are pre-built components that can be cloned into your project. You can use them as they are or as a starting point for modification and extension. It's also a great way to learn some of the best development patterns in Noodl.
+An important concept in FluxScape that will take your productivity to the next level is **prefabs**. These are pre-built components that can be cloned into your project. You can use them as they are or as a starting point for modification and extension. It's also a great way to learn some of the best development patterns in FluxScape.
 
 <div className="ndl-image-with-background l">
 
@@ -151,4 +151,4 @@ An important concept in Noodl that will take your productivity to the next level
 
 </div>
 
-Any components that you build can also be turned into prefabs, and submitted to the Noodl Docs repo for the whole community to use. Read more about it [here](/library/prefab-contributions).
+Any components that you build can also be turned into prefabs, and submitted to the FluxScape Docs repo for the whole community to use. Read more about it [here](/library/prefab-contributions).

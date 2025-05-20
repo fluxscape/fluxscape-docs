@@ -7,7 +7,7 @@ hide_title: true
 
 A good idea is to start the docs with a short 2-3 sentence description of what the prefab does. In this starter you will see some made up info about a made up prefab called My Prefab.
 
-> This is how to write a blockquote. It is neat to (sparingly) use for extra important info or if you want to add some attribution the [Author](https://noodl.net) of the Prefab.
+> This is how to write a blockquote. It is neat to (sparingly) use for extra important info.
 
 <div className="ndl-image-with-background">
 

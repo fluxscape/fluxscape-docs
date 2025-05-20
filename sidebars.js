@@ -45,7 +45,7 @@ const sidebars = {
         },
         {
           type: 'doc',
-          label: 'Noodl AI',
+          label: 'FluxScape AI',
           id: 'getting-started/noodl-ai',
         },
         {

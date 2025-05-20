@@ -7,17 +7,17 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Fundamentals
 
-Here you will learn about a few fundamental concepts in Noodl that are important to get a grasp on before continuing. You can view the video below or review the short guide.
+Here you will learn about a few fundamental concepts in FluxScape that are important to get a grasp on before continuing. You can view the video below or review the short guide.
 
 <div style={{padding:'62.5% 0 0 0',position:'relative'}}><iframe width="100%" height="100%" src="https://www.youtube.com/embed/kD-Oz_M-IS4" style={{position:'absolute',top:0,left:0}} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
 
 :::note
-This video is from a deprecated commercial version of Noodl and includes some features not present in the open source version, notably workspaces and built-in Git hosting
+This video is from a deprecated commercial version of FluxScape (Noodl) and includes some features not present in the open source version, notably workspaces and built-in Git hosting
 :::
 
 ## Nodes
 
-The main building blocks of Noodl are nodes. Every node has its own specific purpose and is very simple in itself, but together they become really powerful. There are a number of types of nodes, indicated by its color. **Blue** nodes are visual elements, such as buttons, or not immediately visible but related, such as groups. **Green** nodes are generally related to reading, writing and manipulating data. **Grey** nodes are utilities, and **Pink** nodes are related to custom code.
+The main building blocks of FluxScape are nodes. Every node has its own specific purpose and is very simple in itself, but together they become really powerful. There are a number of types of nodes, indicated by its color. **Blue** nodes are visual elements, such as buttons, or not immediately visible but related, such as groups. **Green** nodes are generally related to reading, writing and manipulating data. **Grey** nodes are utilities, and **Pink** nodes are related to custom code.
 
 ![](/docs/getting-started/basic-concepts/nodes.png)
 
@@ -27,11 +27,11 @@ All nodes have inputs and outputs. Connecting two nodes is as easy as clicking o
 
 ![](/docs/getting-started/basic-concepts/connecting-nodes.gif)
 
-Most properties in Noodl can be connected, that's what makes it so powerful and easy to be creative with.
+Most properties in FluxScape can be connected, that's what makes it so powerful and easy to be creative with.
 
 ### Connection types
 
-Noodl has two different connection types, <span className="ndl-data">Data</span> and <span className="ndl-signal">Signals</span>.
+FluxScape has two different connection types, <span className="ndl-data">Data</span> and <span className="ndl-signal">Signals</span>.
 
 - <span className="ndl-data">Data</span>: This connects an output value from one node, such as the content of a Text Input or a Variable, to an input of another node. This is typically used to present data in your user interface. When data is passed over a connection you will see it light up in the Node Graph.
 
