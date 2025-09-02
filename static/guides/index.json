@@ -3,7 +3,7 @@
   "sectionTitle": "Building User Interfaces",
   "guides": [
     {
-      "thumb": "guides/thumbnails/guide_basics.png",
+      "thumb": "guides/thumbnails/basic_concepts.png",
       "title": "Visual nodes",
       "url": "docs/guides/user-interfaces/basics"
     },
