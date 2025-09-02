@@ -1,0 +1,257 @@
+[
+  {
+  "sectionTitle": "Building User Interfaces",
+  "guides": [
+    {
+      "thumb": "guides/thumbnails/guide_basics.png",
+      "title": "Visual nodes",
+      "url": "docs/guides/user-interfaces/basics"
+    },
+    {
+      "title": "Components",
+      "url": "docs/guides/user-interfaces/components"
+    },
+    {
+      "title": "Layout",
+      "url": "docs/guides/user-interfaces/layout"
+    },
+    {
+      "title": "Responsive Design",
+      "url": "docs/guides/user-interfaces/responsive-design"
+    },
+    {
+      "title": "Style Variants",
+      "url": "docs/guides/user-interfaces/style-variants"
+    },
+    {
+      "title": "Visual States",
+      "url": "docs/guides/user-interfaces/visual-states"
+    },
+    {
+      "title": "States Node",
+      "url": "docs/guides/user-interfaces/states"
+    },
+    {
+      "title": "Scrolling Content",
+      "url": "docs/guides/user-interfaces/scrolling-content"
+    },
+    {
+      "title": "Modules and Prefabs",
+      "url": "docs/guides/user-interfaces/modules"
+    },
+    {
+      "title": "Figma Plugin",
+      "url": "docs/guides/user-interfaces/figma-plugin"
+    }
+  ]
+},
+  {
+    "sectionTitle": "Working with data",
+    "guides": [
+      {
+        "title": "Making Connections",
+        "url": "docs/guides/data/making-connections"
+      },
+      {
+        "title": "Variables",
+        "url": "docs/guides/data/variables"
+      },
+      {
+        "title": "Objects",
+        "url": "docs/guides/data/objects"
+      },
+      {
+        "title": "Arrays",
+        "url": "docs/guides/data/arrays"
+      },
+      {
+        "title": "Lists Basics",
+        "url": "docs/guides/data/list-basics"
+      },
+      {
+        "title": "UI Controls and data",
+        "url": "docs/guides/data/ui-controls-and-data"
+      },
+      {
+        "title": "External Data",
+        "url": "docs/guides/data/external-data"
+      }
+    ]
+  },
+  {
+    "sectionTitle": "Navigation",
+    "guides": [
+      {
+        "title": "Basic Navigation",
+        "url": "docs/guides/navigation/basic-navigation"
+      },
+      {
+        "title": "Multi Level Navigation",
+        "url": "docs/guides/navigation/multi-level-navigation"
+      },
+      {
+        "title": "Encoding Parameters in URLs",
+        "url": "docs/guides/navigation/encoding-parameters-in-urls"
+      },
+      {
+        "title": "Popups",
+        "url": "docs/guides/navigation/popups"
+      },
+      {
+        "title": "Component Stack",
+        "url": "docs/guides/navigation/component-stack"
+      }
+    ]
+  },
+  {
+    "sectionTitle": "Working with cloud data",
+    "guides": [
+      {
+        "title": "Creating a cloud service",
+        "url": "docs/guides/cloud-data/creating-a-backend"
+      },
+      {
+        "title": "Creating a class",
+        "url": "docs/guides/cloud-data/creating-a-class"
+      },
+      {
+        "title": "Creating new database records",
+        "url": "docs/guides/cloud-data/creating-new-database-records"
+      },
+      {
+        "title": "Quering records from a database",
+        "url": "docs/guides/cloud-data/quering-records-from-database"
+      },
+      {
+        "title": "Updating records",
+        "url": "docs/guides/cloud-data/updating-records"
+      },
+      {
+        "title": "Filter database queries",
+        "url": "docs/guides/cloud-data/filtering-database-queries"
+      },
+      {
+        "title": "Record relations",
+        "url": "docs/guides/cloud-data/record-relations"
+      },
+      {
+        "title": "Access Control",
+        "url": "docs/guides/cloud-data/access-control"
+      },
+      {
+        "title": "Importing and exporting data",
+        "url": "docs/guides/cloud-data/import-export-csv"
+      }
+    ]
+  },
+  {
+  "sectionTitle": "Visualizing Data",
+  "guides": [
+    {
+      "title": "Using the Table component to visualize data",
+      "url": "docs/guides/visualizing-data/table-to-visualize-data"
+    },
+    {
+      "title": "Adding pagination to the Table component",
+      "url": "docs/guides/visualizing-data/table-pagination"
+    },
+    {
+      "title": "Filter your Table data",
+      "url": "docs/guides/visualizing-data/filter-table-data"
+    },
+    {
+      "title": "Styling the Table",
+      "url": "docs/guides/visualizing-data/styling-table"
+    }
+  ]
+},
+{
+  "sectionTitle": "Building business logic",
+  "guides": [
+    {
+      "title": "Client Side Business Logic with Nodes",
+      "url": "docs/guides/business-logic/client-side-biz-logic-nodes"
+    },
+    {
+      "title": "Javascript in Noodl",
+      "url": "docs/guides/business-logic/javascript"
+    },
+    {
+      "title": "Client Side Business Logic with Javascript",
+      "url": "docs/guides/business-logic/client-side-biz-logic-js"
+    },
+    {
+      "title": "Custom UI Components",
+      "url": "docs/guides/business-logic/custom-ui-components"
+    },
+    {
+      "title": "Events",
+      "url": "docs/guides/business-logic/events"
+    }
+  ]
+},
+{
+  "sectionTitle": "User Management",
+  "guides": [
+    {
+      "title": "Creating users in Noodl",
+      "url": "docs/guides/user-management/creating-users-in-noodl"
+    }
+  ]
+},
+{
+  "sectionTitle": "Cloud Functions",
+  "guides": [
+    {
+      "title": "Introduction",
+      "url": "docs/guides/cloud-logic/introduction"
+    },
+    {
+      "title": "Email Verification",
+      "url": "docs/guides/cloud-logic/email-verification"
+    },
+    {
+      "title": "Scheduled Jobs",
+      "url": "docs/guides/cloud-logic/scheduled-jobs"
+    },
+    {
+      "title": "Logging and Debugging",
+      "url": "docs/guides/cloud-logic/logging"
+    },
+    {
+      "title": "Javascript",
+      "url": "docs/guides/cloud-logic/javascript"
+    }
+  ]
+},
+{
+  "sectionTitle": "Collaboration",
+  "guides": [
+    {
+      "title": "Version Control",
+      "url": "docs/guides/collaboration/version-control"
+    },
+    {
+      "title": "Migrating from Noodl hosted Git",
+      "url": "docs/guides/collaboration/migrating-from-noodl-hosted-git"
+    }
+  ]
+},
+{
+  "sectionTitle": "Deploying and hosting apps",
+  "guides": [
+    {
+      "title": "Using a self hosted cloud service",
+      "url": "docs/guides/deploy/using-an-external-backend"
+    },
+    {
+      "title": "Deploying to iOS and Android",
+      "url": "docs/guides/deploy/deploying-to-ios-and-android"
+    },
+    {
+      "title": "Self hosting your Noodl Frontend",
+      "url": "docs/guides/deploy/hosting-frontend"
+    }
+  ]
+}
+]
