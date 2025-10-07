@@ -8,7 +8,12 @@ hide_title: true
 The **FluxScape CLI** provides a streamlined way to manage, build, and deploy FluxScape projects directly from your terminal.  
 It bridges **low-code creation** with **modern developer workflows**, giving both low-coders and pro developers speed, automation, and full control.
 
+## Requirements
 
+Before installing the CLI, ensure that you have the following installed:
+- **Node.js** v18 or newer  
+- **npm** v9 or newer  
+- A valid **FluxScape account**
 
 ## Installation
 
