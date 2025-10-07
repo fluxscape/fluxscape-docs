@@ -117,7 +117,6 @@ fluxscape deploy to --url my-app.fluxscape.io --src ./my-project
 ```
 
 
-
 ## Runtime Management
 
 List available versions for a runtime (local or remote):
@@ -125,12 +124,3 @@ List available versions for a runtime (local or remote):
 ```bash
 fluxscape runtime list react
 ```
-
-
-
-## Why the CLI Matters
-
-For **low-coders**: instantly turn visual builds into deployable app, no additional setup or DevOps knowledge required.  
-For **developers**: automate builds and deploys, integrate with **CI/CD pipelines**, and keep environments consistent and versioned.
-
-> By combining low-code speed with developer-grade precision, the FluxScape CLI helps teams build faster, test smarter, and deploy with confidence.
