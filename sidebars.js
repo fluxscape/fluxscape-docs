@@ -67,6 +67,11 @@ const sidebars = {
             },
           ],
         },
+         {
+          type: 'doc',
+          label: 'CLI',
+          id: 'getting-started/cli',
+        },
       ],
     },
     {
