@@ -13,7 +13,7 @@ It bridges **low-code creation** with **modern developer workflows**, giving bot
 Before installing the CLI, ensure that you have the following installed:
 
 - **Node.js** v18 or newer
-- **npm** v9 or newer
+- **npx** v9 or newer
 - A valid **FluxScape account**
 
 ## Installation
@@ -21,7 +21,7 @@ Before installing the CLI, ensure that you have the following installed:
 Install globally, or use `npx` without a global install.
 
 ```bash
-npm i -g fluxscape
+npx i -g fluxscape
 ```
 
 or
@@ -146,7 +146,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          registry-url: "https://registry.npmjs.org"
+          registry-url: "https://registry.npxjs.org"
 
       - name: Fluxscape Authenticate
         run: |
