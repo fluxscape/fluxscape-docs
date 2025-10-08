@@ -11,8 +11,9 @@ It bridges **low-code creation** with **modern developer workflows**, giving bot
 ## Requirements
 
 Before installing the CLI, ensure that you have the following installed:
-- **Node.js** v18 or newer  
-- **npm** v9 or newer  
+
+- **Node.js** v18 or newer
+- **npm** v9 or newer
 - A valid **FluxScape account**
 
 ## Installation
@@ -35,8 +36,6 @@ Verify your installation:
 fluxscape --version
 ```
 
-
-
 ## Login
 
 Authenticate your environment with your FluxScape account:
@@ -55,8 +54,6 @@ Login successful. Welcome, <your name>!
 Authentication enables account-scoped operations such as listing deploy targets and deploying apps.
 :::
 
-
-
 ## Build a Project
 
 Create a production-ready build:
@@ -71,8 +68,6 @@ Build from a specific source directory:
 npx fluxscape build --out ./dist --src ./my-project
 ```
 
-
-
 ## Run Locally
 
 Start a local server and preview your app:
@@ -86,8 +81,6 @@ Then open your browser and navigate to:
 ```text
 http://localhost:4000
 ```
-
-
 
 ## Deployment
 
@@ -116,11 +109,50 @@ fluxscape deploy to --url my-app.fluxscape.io --runtimePath ./local-runtime
 fluxscape deploy to --url my-app.fluxscape.io --src ./my-project
 ```
 
-
 ## Runtime Management
 
 List available versions for a runtime (local or remote):
 
 ```bash
 fluxscape runtime list react
+```
+
+## GitHub Actions
+
+The following GitHub Actions workflow automatically deploys the app on every commit to the main branch using Fluxscape.
+
+> Note:
+>
+> - `FLUXSCAPE_TOKEN` is an API token generated from your Fluxscape account.
+> - Replace `"your-site.fluxscape.app"` with the domain you want to deploy to.
+
+```yaml
+name: Publish Nightly
+
+on:
+  push:
+    branches:
+      - main # runs on push to main branch
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Fluxscape Authenticate
+        run: |
+          npx fluxscape auth set-token "${{ secrets.FLUXSCAPE_TOKEN }}"
+
+      - name: Deploy with Fluxscape CLI
+        run: |
+          npx fluxscape deploy to --url "your-site.fluxscape.app" --src "."
 ```
