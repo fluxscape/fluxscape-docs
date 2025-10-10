@@ -16,6 +16,10 @@ Before installing the CLI, ensure that you have the following installed:
 - **npx** v9 or newer
 - A valid **FluxScape account**
 
+:::note
+This is a premium feature available only on paid plans.
+:::
+
 ## Installation
 
 Install globally, or use `npx` without a global install.
