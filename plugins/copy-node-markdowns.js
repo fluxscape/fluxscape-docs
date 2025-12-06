@@ -15,9 +15,11 @@ function resolveImports(content, dir) {
 }
 
 function copyNodeMarkdowns(dir, asFolderName) {
+  console.log(" - Processing path: " + dir);
   fs.readdirSync(dir).forEach(function (file) {
-    if (fs.lstatSync(dir + "/" + file).isDirectory()) {
-      copyNodeMarkdowns(dir + "/" + file, asFolderName);
+    const filePath = (dir.endsWith("/") ? dir : dir + "/") + file;
+    if (fs.lstatSync(filePath).isDirectory()) {
+      copyNodeMarkdowns(filePath, asFolderName);
     } else if (file.endsWith(".md")) {
       const filePath = path.join(dir, file);
       const content = fs.readFileSync(filePath);
@@ -30,19 +32,16 @@ function copyNodeMarkdowns(dir, asFolderName) {
           "build/" + filePath.split(/\\|\//).slice(0, -1).join("/") + ".md";
       }
 
-      if (!fs.existsSync("build/" + dir)) {
-        fs.mkdirSync("build/" + dir);
-      }
+      fs.mkdirSync(path.dirname(outputFilePath), { recursive: true });
       fs.writeFileSync(outputFilePath, resolved);
     }
   });
 }
 
-export function copyNodeMarkdownPlugin(context, options) {
+export function copyNodeMarkdownPlugin(_context, options) {
   return {
     name: "docusaurus-copy-node-markdowns-plugin",
-    configureWebpack(config, isServer, utils) {
-      const { getJSLoader } = utils;
+    configureWebpack(_config, isServer, _utils) {
       return isServer
         ? {
             plugins: [
@@ -50,12 +49,11 @@ export function copyNodeMarkdownPlugin(context, options) {
                 apply: (compiler) => {
                   compiler.hooks.afterEmit.tap(
                     "AfterEmitPlugin",
-                    (compilation) => {
+                    (_compilation) => {
                       console.log("Copying node markdown files");
 
-                      options.paths.forEach((path) => {
-                        console.log(" - Processing path: " + path.path);
-                        copyNodeMarkdowns(path.path, !!path.folderName);
+                      options.paths.forEach((filePath) => {
+                        copyNodeMarkdowns(filePath.path, !!filePath.folderName);
                       });
                     }
                   );
