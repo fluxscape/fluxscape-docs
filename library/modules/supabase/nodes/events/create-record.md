@@ -14,10 +14,11 @@ This node is used to receive a signal when a Supabase record is created by the c
 
 <div className="ndl-table-35-65">
 
-| Data                                         | Type    | Description                                                                         |
-| -------------------------------------------- | ------- | ----------------------------------------------------------------------------------- |
-| <span className="ndl-data">Enable</span>     | boolean | Allow filtering on a specific table events, otherwise this will receive all events. |
-| <span className="ndl-data">Table Name</span> | string  | Visible when "Enable" is true.                                                      |
+| Data                                             | Type    | Description                                                                         |
+| ------------------------------------------------ | ------- | ----------------------------------------------------------------------------------- |
+| <span className="ndl-data">Enable</span>         | boolean | Allow filtering on a specific table events, otherwise this will receive all events. |
+| <span className="ndl-data">Table Name</span>     | string  | Visible when "Enable" is true.                                                      |
+| <span className="ndl-data">Data Object ID</span> | string  |                                                                                     |
 
 </div>
 
