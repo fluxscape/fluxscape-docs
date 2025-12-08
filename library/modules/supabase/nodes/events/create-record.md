@@ -2,13 +2,13 @@
 hide_title: true
 ---
 
-{/_##head##_/}
+{/*##head##*/}
 
 # Supabase Client Event Create Record
 
 This node is used to receive a signal when a Supabase record is created by the client. Similiar to the [Receive Event node](/nodes/events/receive-event), just the Send Event node is built into the Create Record node.
 
-{/_##head##_/}
+{/*##head##*/}
 
 ## Inputs
 

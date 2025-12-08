@@ -2,8 +2,8 @@
 hide_title: true
 ---
 
-{/_##head##_/}
+{/*##head##*/}
 
 # Supabase Realtime Broadcast Message
 
-{/_##head##_/}
+{/*##head##*/}

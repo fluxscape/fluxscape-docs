@@ -45,7 +45,14 @@ const sidebars = {
         type: "doc",
         id: "modules/overview",
       },
-      items: getAllResourceOverviewLinks(modules),
+      items: [
+        {
+          type: "link",
+          label: "Supabase",
+          href: "/library/modules/supabase/",
+        },
+        ...getAllResourceOverviewLinks(modules),
+      ],
     },
     {
       type: "category",
@@ -199,7 +206,7 @@ const sidebars = {
   ],
 
   // Supabase
-  customHtmlSidebar: [
+  supabase: [
     {
       type: "doc",
       label: "Overview",
@@ -274,7 +281,7 @@ const sidebars = {
         {
           type: "doc",
           label: "Client Event Create Record",
-          id: "modules/supabase/nodes/events/create-new-record",
+          id: "modules/supabase/nodes/events/create-record",
         },
         {
           type: "doc",

@@ -2,8 +2,8 @@
 hide_title: true
 ---
 
-{/_##head##_/}
+{/*##head##*/}
 
 # Upload File (Resumable)
 
-{/_##head##_/}
+{/*##head##*/}

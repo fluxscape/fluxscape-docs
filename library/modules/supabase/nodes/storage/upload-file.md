@@ -2,8 +2,8 @@
 hide_title: true
 ---
 
-{/_##head##_/}
+{/*##head##*/}
 
 # Upload File
 
-{/_##head##_/}
+{/*##head##*/}

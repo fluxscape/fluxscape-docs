@@ -2,13 +2,13 @@
 hide_title: true
 ---
 
-{/_##head##_/}
+{/*##head##*/}
 
 # Query Records
 
 The Query Records node retrieves data from your Supabase table or views. You can use it to fetch a list of records or perform a count query, depending on your needs.
 
-{/_##head##_/}
+{/*##head##*/}
 
 This is based on the [Supabase Client SDK - Fetch data](https://supabase.com/docs/reference/javascript/select).
 

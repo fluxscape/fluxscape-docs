@@ -2,8 +2,8 @@
 hide_title: true
 ---
 
-{/_##head##_/}
+{/*##head##*/}
 
 # Supabase Realtime Set Presence
 
-{/_##head##_/}
+{/*##head##*/}

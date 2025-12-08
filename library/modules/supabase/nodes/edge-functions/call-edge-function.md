@@ -2,13 +2,13 @@
 hide_title: true
 ---
 
-{/_##head##_/}
+{/*##head##*/}
 
 # Call Edge Function
 
 The Call Edge Function node calls a specific Supabase Edge Function. You provide the unique function name, and the request body.
 
-{/_##head##_/}
+{/*##head##*/}
 
 This is based on the [Supabase Client SDK - Invokes a Supabase Edge Function](https://supabase.com/docs/reference/javascript/functions-invoke).
 

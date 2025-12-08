@@ -2,8 +2,8 @@
 hide_title: true
 ---
 
-{/_##head##_/}
+{/*##head##*/}
 
 # User
 
-{/_##head##_/}
+{/*##head##*/}

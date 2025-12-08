@@ -2,8 +2,8 @@
 hide_title: true
 ---
 
-{/_##head##_/}
+{/*##head##*/}
 
 # Supabase Realtime Subscribe To Channel
 
-{/_##head##_/}
+{/*##head##*/}
