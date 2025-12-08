@@ -1,64 +1,67 @@
-const fs = require('fs')
-const path = require('path')
+import fs from "node:fs";
+import path from "node:path";
 
 function resolveImports(content, dir) {
-    const includeMatch = content.matchAll(/@include\s\"(.*)\"/g)
-    for (const _s of includeMatch) {
-        const includePath = _s[1];
-        const absPath = path.join(dir, includePath)
+  const includeMatch = content.matchAll(/@include\s\"(.*)\"/g);
+  for (const _s of includeMatch) {
+    const includePath = _s[1];
+    const absPath = path.join(dir, includePath);
 
-        const include = fs.readFileSync(absPath)
-        content = content.replace(_s[0], include)
-    }
+    const include = fs.readFileSync(absPath);
+    content = content.replace(_s[0], include);
+  }
 
-    return content
+  return content;
 }
 
 function copyNodeMarkdowns(dir, asFolderName) {
-    fs.readdirSync(dir).forEach(function (file) {
-        if (fs.lstatSync(dir + '/' + file).isDirectory()) {
-            copyNodeMarkdowns(dir + '/' + file, asFolderName)
-        } else if (file.endsWith('.md')) {
-            const filePath = path.join(dir, file);
-            const content = fs.readFileSync(filePath)
-            const resolved = resolveImports(content.toString(), dir)
-            
-            let outputFilePath = 'build/' + filePath;
-            if (asFolderName) {
-                // HACK: Resolve the new nodes folder structure
-                outputFilePath = 'build/' + filePath.split(/\\|\//).slice(0, -1).join("/") + '.md'
-            }
+  console.log(" - Processing path: " + dir);
+  fs.readdirSync(dir).forEach(function (file) {
+    const filePath = (dir.endsWith("/") ? dir : dir + "/") + file;
+    if (fs.lstatSync(filePath).isDirectory()) {
+      copyNodeMarkdowns(filePath, asFolderName);
+    } else if (file.endsWith(".md")) {
+      const filePath = path.join(dir, file);
+      const content = fs.readFileSync(filePath);
+      const resolved = resolveImports(content.toString(), dir);
 
-            if (!fs.existsSync('build/' + dir)) {
-                fs.mkdirSync('build/' + dir);
-            }
-            fs.writeFileSync(outputFilePath, resolved)
-        }
-    })
+      let outputFilePath = "build/" + filePath;
+      if (asFolderName) {
+        // HACK: Resolve the new nodes folder structure
+        outputFilePath =
+          "build/" + filePath.split(/\\|\//).slice(0, -1).join("/") + ".md";
+      }
+
+      fs.mkdirSync(path.dirname(outputFilePath), { recursive: true });
+      fs.writeFileSync(outputFilePath, resolved);
+    }
+  });
 }
 
-module.exports = function (context, options) {
-    return {
-        name: 'docusaurus-copy-node-markdowns-plugin',
-        configureWebpack(config, isServer, utils) {
-            const {
-                getJSLoader
-            } = utils;
-            return isServer ? {
-                plugins: [{
-                    apply: (compiler) => {
-                        compiler.hooks.afterEmit.tap('AfterEmitPlugin', (compilation) => {
-                            console.log('Copying node markdown files')
+export function copyNodeMarkdownPlugin(_context, options) {
+  return {
+    name: "docusaurus-copy-node-markdowns-plugin",
+    configureWebpack(_config, isServer, _utils) {
+      return isServer
+        ? {
+            plugins: [
+              {
+                apply: (compiler) => {
+                  compiler.hooks.afterEmit.tap(
+                    "AfterEmitPlugin",
+                    (_compilation) => {
+                      console.log("Copying node markdown files");
 
-                            options.paths.forEach(path => {
-                                console.log(' - Processing path: ' + path.path)
-                                copyNodeMarkdowns(path.path, !!path.folderName)
-                            })
-
-                        })
+                      options.paths.forEach((filePath) => {
+                        copyNodeMarkdowns(filePath.path, !!filePath.folderName);
+                      });
                     }
-                }]
-            } : {}
-        },
-    };
-};
+                  );
+                },
+              },
+            ],
+          }
+        : {};
+    },
+  };
+}
