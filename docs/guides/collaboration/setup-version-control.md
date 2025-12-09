@@ -110,11 +110,15 @@ Fluxscape uses **GitHub Personal Access Tokens**.
 
 1. Open your project in Fluxscape
 2. Open the **Version Control** panel
-3. Open **Git Origin** settings
-4. Paste the GitHub repository URL
-5. Paste your Personal Access Token into **GitHub Credentials**
-6. Save
+3. Click Version Control Settings (Gear Icon)
+4. Find your Github Repo Origin URL
+5. Paste the GitHub Repo Origin URL
+6. Paste your Personal Access Token into **GitHub Credentials**
+7. Save
 
+<div className="ndl-image-with-background">
+![](/docs/guides/collaboration/version-control/github-origin.jpg)
+</div>
 <div className="ndl-image-with-background">
 ![](/docs/guides/collaboration/version-control/git-origin-form.jpg)
 </div>
