@@ -123,10 +123,8 @@ Fluxscape uses **GitHub Personal Access Tokens**.
 ![](/docs/guides/collaboration/version-control/git-origin-form.jpg)
 </div>
 
-Once configured, Fluxscape can push and pull changes from GitHub.
+## Next Steps
 
 :::note
-If you push local history to a repository that already contains commits, Fluxscape will replace the remote contents with your local project state.
-
-To avoid this, ensure the repository already matches your project structure or use a new empty repository.
+Continue to [Using Version Control](./version-control) to learn how to work with commits, syncing, conflicts, and branches.
 :::
