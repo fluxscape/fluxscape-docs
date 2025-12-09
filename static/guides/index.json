@@ -227,8 +227,12 @@
   "sectionTitle": "Collaboration",
   "guides": [
     {
-      "title": "Version Control",
-      "url": "docs/guides/collaboration/version-control"
+      "title": "Setup Version Control",
+      "url": "docs/guides/collaboration/setup-version-control"
+    },
+    {
+      "title": "Using Version Control",
+      "url": "docs/guides/collaboration/using-version-control"
     },
     {
       "title": "Migrating from Noodl hosted Git",
