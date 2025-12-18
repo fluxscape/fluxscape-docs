@@ -241,6 +241,11 @@ const sidebars = {
       items: [
         {
           type: "doc",
+          label: "Call a Postgres function",
+          id: "modules/supabase/nodes/data/call-a-postgres-function",
+        },
+        {
+          type: "doc",
           label: "Create new Record",
           id: "modules/supabase/nodes/data/create-new-record",
         },

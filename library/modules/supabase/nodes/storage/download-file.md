@@ -8,6 +8,8 @@ hide_title: true
 
 {/*##head##*/}
 
+This is based on the [Supabase Client SDK - Download a file](https://supabase.com/docs/reference/javascript/storage-from-download).
+
 ## Inputs
 
 <div className="ndl-table-35-65">

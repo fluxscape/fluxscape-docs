@@ -8,6 +8,8 @@ hide_title: true
 
 {/*##head##*/}
 
+This is based on the [Resumable Uploads](https://supabase.com/docs/guides/storage/uploads/resumable-uploads).
+
 ## Inputs
 
 <div className="ndl-table-35-65">

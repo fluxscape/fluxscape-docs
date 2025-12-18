@@ -6,7 +6,11 @@ hide_title: true
 
 # Supabase Upload File
 
+Uploads a file to an existing bucket.
+
 {/*##head##*/}
+
+This is based on the [Supabase Client SDK - Upload a file](https://supabase.com/docs/reference/javascript/storage-from-upload).
 
 ## Inputs
 
