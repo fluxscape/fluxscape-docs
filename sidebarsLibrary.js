@@ -215,7 +215,7 @@ const sidebars = {
     {
       type: "category",
       label: "Auth Nodes",
-      collapsible: false,
+      collapsible: true,
       items: [
         {
           type: "doc",
@@ -237,7 +237,7 @@ const sidebars = {
     {
       type: "category",
       label: "Data Nodes",
-      collapsible: false,
+      collapsible: true,
       items: [
         {
           type: "doc",
@@ -264,7 +264,7 @@ const sidebars = {
     {
       type: "category",
       label: "Edge Function Nodes",
-      collapsible: false,
+      collapsible: true,
       items: [
         {
           type: "doc",
@@ -276,7 +276,7 @@ const sidebars = {
     {
       type: "category",
       label: "Events Nodes",
-      collapsible: false,
+      collapsible: true,
       items: [
         {
           type: "doc",
@@ -292,6 +292,60 @@ const sidebars = {
           type: "doc",
           label: "Client Event Update Records",
           id: "modules/supabase/nodes/events/update-records",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Realtime Nodes",
+      collapsible: true,
+      items: [
+        {
+          type: "doc",
+          label: "Broadcast Message",
+          id: "modules/supabase/nodes/realtime/broadcast-message",
+        },
+        {
+          type: "doc",
+          label: "Set Presence",
+          id: "modules/supabase/nodes/realtime/set-presence",
+        },
+        {
+          type: "doc",
+          label: "Subscribe To Channel",
+          id: "modules/supabase/nodes/realtime/subscribe-to-channel",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Storage Nodes",
+      collapsible: true,
+      items: [
+        {
+          type: "doc",
+          label: "Create Signed File URL",
+          id: "modules/supabase/nodes/storage/create-signed-file-url",
+        },
+        {
+          type: "doc",
+          label: "Delete File",
+          id: "modules/supabase/nodes/storage/delete-file",
+        },
+        {
+          type: "doc",
+          label: "Download File",
+          id: "modules/supabase/nodes/storage/download-file",
+        },
+        {
+          type: "doc",
+          label: "Upload File (Resumable)",
+          id: "modules/supabase/nodes/storage/upload-file-resumable",
+        },
+        {
+          type: "doc",
+          label: "Download File",
+          id: "modules/supabase/nodes/storage/upload-file",
         },
       ],
     },
