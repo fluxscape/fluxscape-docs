@@ -329,13 +329,13 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Create Signed File URL",
-          id: "modules/supabase/nodes/storage/create-signed-file-url",
+          label: "Retrieve Public File URLs",
+          id: "modules/supabase/nodes/storage/retrieve-public-file-urls",
         },
         {
           type: "doc",
-          label: "Delete File",
-          id: "modules/supabase/nodes/storage/delete-file",
+          label: "Delete Files",
+          id: "modules/supabase/nodes/storage/delete-files",
         },
         {
           type: "doc",
