@@ -18,7 +18,7 @@ This is based on the [Supabase Client SDK - Delete files in a bucket](https://su
 | ------------------------------------------------- | ------------- | ----------- |
 | <span className="ndl-data">Delete</span>          | signal        |             |
 | <span className="ndl-data">Bucket</span>          | string        |             |
-| <span className="ndl-data">Paths to Delete</span> | array<string> |             |
+| <span className="ndl-data">Paths to Delete</span> | array of string |             |
 
 </div>
 
@@ -28,7 +28,7 @@ This is based on the [Supabase Client SDK - Delete files in a bucket](https://su
 
 | Data                                            | Type          | Description |
 | ----------------------------------------------- | ------------- | ----------- |
-| <span className="ndl-data">Deleted Paths</span> | array<string> |             |
+| <span className="ndl-data">Deleted Paths</span> | array of string |             |
 | <span className="ndl-data">Is Deleting</span>   | boolean       |             |
 | <span className="ndl-data">Is Deleted</span>    | boolean       |             |
 | <span className="ndl-data">Status</span>        | string        |             |
