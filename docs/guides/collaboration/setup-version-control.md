@@ -111,7 +111,7 @@ Fluxscape uses **GitHub Personal Access Tokens**.
 1. Open your project in Fluxscape
 2. Open the **Version Control** panel
 3. Click Version Control Settings (Gear Icon)
-4. Find your Github Repo Origin URL
+4. Find your GitHub Repo Origin URL
 5. Paste the GitHub Repo Origin URL
 6. Paste your Personal Access Token into **GitHub Credentials**
 7. Save
