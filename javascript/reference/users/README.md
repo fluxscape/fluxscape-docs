@@ -153,3 +153,35 @@ Noodl.Users.on("loggedOut", () => {
 
 **Only available on the frontend**  
 You use this function to remove an event listener from a specific event.
+
+## Others
+
+### Getting the current User session token
+
+Sometimes getting the Session Token might be useful when interacting with external APIs that want to verify the session towards the same Cloud Service, and here is an example of how to get it from Noodl.
+
+```js
+const appId = Noodl.getMetaData().cloudservices.appId;
+const userString = localStorage['Parse/' + appId + '/currentUser'];
+const user = JSON.parse(userString);
+
+/*
+user = {
+  "objectId": "se5yYEvXya",
+  "username": "eric",
+  "email": "",
+  "createdAt": "2024-06-05T12:05:31.260Z",
+  "updatedAt": "2024-06-09T23:13:35.916Z",
+  "ACL": {
+    "*": {
+      "read": true
+    }
+  },
+  "__type": "Object",
+  "className": "_User",
+  "sessionToken": "r:29074df29b2a3a77dd623dbc18458565"
+}
+*/
+
+const sessionToken = user.sessionToken;
+```

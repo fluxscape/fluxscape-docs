@@ -70,6 +70,11 @@ const sidebars = {
       ],
     },
     {
+          type: 'doc',
+          label: 'CLI',
+          id: 'cli',
+    },
+    {
       type: 'category',
       label: 'Guides',
       collapsible: true,

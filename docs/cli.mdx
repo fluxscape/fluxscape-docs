@@ -1,0 +1,261 @@
+---
+title: Fluxscape CLI
+hide_title: true
+slug: /cli
+---
+
+# Fluxscape CLI
+
+The **Fluxscape CLI** provides a streamlined way to manage, build, and deploy Fluxscape projects directly from your terminal.  
+It bridges **low-code creation** with **modern developer workflows**, giving both low-coders and pro developers speed, automation, and full control.
+
+## Requirements
+:::note
+To use the FluxScape CLI. You’ll need a Fluxsacpe Professional or Enterprise Account.
+:::
+
+
+Before installing the CLI, make sure you have:
+- **Node.js** v18 or newer
+- **npx** v9 or newer
+
+## Installation
+
+The Fluxscape CLI is designed to be run with **`npx`** so you always use the latest version.
+
+```bash
+npx fluxscape [options] [command]
+```
+Check your installation version:
+```bash
+npx fluxscape --version
+```
+
+## Login
+
+Authenticate your environment with your Fluxscape account.  
+Most commands require an active login with an eligible account.
+
+### Available Commands
+
+| Command                             | Description                    |
+|-------------------------------------|--------------------------------|
+| `auth login <username> <password>`  | Log in with credentials        |
+| `auth logout`                       | Clear stored credentials       |
+| `auth set-token <token>`            | Authenticate using an API token|
+| `auth whoami`                       | Show the current user          |
+
+### Example
+
+```bash
+npx fluxscape auth login myuser mypassword
+npx fluxscape auth whoami
+```
+
+## Project Commands
+
+### Build
+
+Build a Fluxscape project for production.
+
+```bash
+npx fluxscape build [--src <dir>] --out <dir>
+```
+
+**Options**
+
+| Option   | Description              | Default           |
+|----------|--------------------------|-------------------|
+| `--src`  | Project source directory | Current directory |
+| `--out`  | Output directory         | **Required**      |
+
+**Examples**
+
+```bash
+npx fluxscape build --out ./dist
+npx fluxscape build --src ./my-project --out ./dist
+```
+
+### Export
+
+Export a Fluxscape project to JSON.
+
+```bash
+npx fluxscape export ./my-project
+```
+
+### Export Prefab *(Experimental)*
+
+Export a specific prefab component from the project.
+
+```bash
+npx fluxscape export-prefab ./my-project MyComponent
+```
+
+---
+
+## Development Commands
+
+### Start *(Experimental)*
+
+Start the Fluxscape development server.
+
+```bash
+npx fluxscape start [--port <port>]
+```
+
+**Options**
+
+| Option    | Description         | Default |
+|-----------|---------------------|---------|
+| `--port`  | Port for dev server | 3000    |
+
+**Examples**
+
+```bash
+npx fluxscape start
+npx fluxscape start --port 4000
+```
+
+Then open your browser at:
+
+```text
+http://localhost:4000
+```
+
+---
+
+## Deployment Commands
+
+### List Deploys
+
+List all Fluxscape deploys for your account.
+
+```bash
+npx fluxscape deploy list
+```
+
+### Deploy
+
+Deploy a Fluxscape app to a specific URL.
+
+```bash
+npx fluxscape deploy to --url <url> [--src <path>] [--runtime <name[@version]>] [--runtimePath <path>]
+```
+
+**Options**
+
+| Option          | Description                                     |
+|-----------------|-------------------------------------------------|
+| `--url <url>`   | **Required.** URL to deploy to (must exist)     |
+| `--src <path>`  | Path to project directory (default: current dir)|
+| `--runtime`     | Use a runtime package with optional version     |
+| `--runtimePath` | Use a runtime from local filesystem             |
+
+**Examples**
+
+```bash
+npx fluxscape deploy to --url my-app.fluxscape.app
+npx fluxscape deploy to --url my-app.fluxscape.app --src ./my-project --runtime react@1.0.0
+npx fluxscape deploy to --url my-app.fluxscape.app --runtimePath ./local-runtime
+```
+
+---
+
+## Runtime Commands
+
+### List Runtimes
+
+List available versions for a runtime.
+
+```bash
+npx fluxscape runtime list <runtime> [--remote] [--prerelease]
+```
+
+**Options**
+
+| Option         | Description                  |
+|----------------|------------------------------|
+| `--remote`     | Show remote/available builds |
+| `--prerelease` | Include prerelease versions  |
+
+**Example**
+
+```bash
+npx fluxscape runtime list react --remote --prerelease
+```
+
+### Install Runtime
+
+Install a runtime version.
+
+```bash
+npx fluxscape runtime install react 1.0.0
+```
+
+### Uninstall Runtime
+
+Uninstall a runtime version.
+
+```bash
+npx fluxscape runtime uninstall react 1.0.0
+```
+
+---
+
+## GitHub Actions
+
+The following GitHub Actions workflow automatically deploys your app on every commit to the `main` branch using Fluxscape.
+
+> Note:  
+> - `FLUXSCAPE_TOKEN` is an API token generated from your Fluxscape account.  
+> - Replace `"your-site.fluxscape.app"` with your deployment domain.
+
+```yaml
+name: Publish Nightly
+
+on:
+  push:
+    branches:
+      - main # runs on push to main branch
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Fluxscape Authenticate
+        run: |
+          npx fluxscape auth set-token "${{ secrets.FLUXSCAPE_TOKEN }}"
+
+      - name: Deploy with Fluxscape CLI
+        run: |
+          npx fluxscape deploy to --url "your-site.fluxscape.app" --src "."
+```
+---
+
+## Help
+
+Get help for any command.
+
+```bash
+npx fluxscape help
+npx fluxscape help build
+```
+
+---
+
+## Tips & Best Practices
+
+- Always use `npx` to avoid outdated CLI versions.  
+- Ensure your `--out` folder exists and is writable.  
+- For deployments, confirm the target URL exists in your account.  
