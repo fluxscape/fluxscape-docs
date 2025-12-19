@@ -1,12 +1,14 @@
-# Version control
+# Using Version Control
 
 ## Introduction
 
-Version control has three main use cases:
+This guide explains how to work with version control in Fluxscape once Git has already been set up for your project.
+It covers day-to-day actions such as committing changes, syncing with collaborators, resolving conflicts, and working with branches.
 
-- Collaborating with team members
-- Working with different versions of your project in parallel (what's known as "branches")
-- Backup. All versions are backed up in the cloud
+:::note
+If you haven’t set up version control yet, see  
+**[Setup Version Control](./setup-version-control)** before continuing.
+:::
 
 <div className="ndl-image-with-background s">
 
@@ -14,36 +16,12 @@ Version control has three main use cases:
 
 </div>
 
-Noodl uses [Git](https://git-scm.com) as the underlying version control system. The project folder is a Git repository.
-The most common way to interact with Git in Noodl is through the Version Control panel. Users comfortable with Git can use external git clients to view their Noodl projects as well.
+Fluxscape uses [Git](https://git-scm.com) as the underlying version control system. The project folder is a Git repository.
+The most common way to interact with Git in Fluxscape is through the Version Control panel. Users comfortable with Git can use external git clients to view their Fluxscape projects as well.
 
-## Enabling version control
 
-To start using the version control features you need to init Git for your project. This can be done by opening the Version Control panel and clicking the "Initialize Version Control" button.
 
-<div className="ndl-image-with-background">
-
-![](/docs/guides/collaboration/version-control/init-git.png)
-
-</div>
-
-This will set up all necessary files to run Git in your project. From here you can version control locally, or push it to an external Git repository. This is useful if you want to collaborate with others, or keep your project backed up on a remote server.
-
-Pushing to an external repo can be done by clicking the button labeled "To push changes set a git remote". You can also use the terminal, or a Git client like [Github Desktop](https://desktop.github.com/).
-
-:::tip
-If you're new to Git, don't forget to push your changes regularly to prevent losing your work. A good rule of thumb is to do it everytime you finish or change a feature.
-:::
-
-Any project collaborators will have to clone the project from the repo, and then open the downloaded Project Folder in Noodl.
-
-The easiest way to get started with Git is through Github. Read more about creating Github repos [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories) or cloning Github repos [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
-
-:::note
-Noodl will clear out the newly created repo when pushing for the first time. However, to be on the safe side, make sure to create the repo without any `README.md` or `.gitignore` files.
-:::
-
-## The version control panel
+## The Version Control Panel
 
 The version control panel is where you perform all actions related to version control. This includes actions such as pushing new changes to your collaborators, pulling the latest version, seeing differences between versions, merging branches, and more.
 
@@ -63,7 +41,7 @@ When there are changes in your project you can commit them to the version contro
 
 </div>
 
-Noodl will now show you all the components and files that have changed, and by clicking them you can see the difference compared to the previous version.
+Fluxscape will now show you all the components and files that have changed, and by clicking them you can see the difference compared to the previous version.
 
 <div className="ndl-image-with-background l">
 
@@ -71,7 +49,7 @@ Noodl will now show you all the components and files that have changed, and by c
 
 </div>
 
-After the changes have been commited the commit is now visible in the history tab.
+After the changes have been committed the commit is now visible in the history tab.
 
 <div className="ndl-image-with-background">
 
@@ -83,7 +61,7 @@ Push your changes by clicking the button at the top that says "Push 1 local comm
 
 ## Pulling down changes
 
-Noodl checks if there are any changes to pull down when the version control panel is opened.
+Fluxscape checks if there are any changes to pull down when the version control panel is opened.
 
 You can also manually check for updates by clicking the update icon
 
@@ -107,7 +85,7 @@ Any local changes you have, that aren't pushed, will still be there after pullin
 
 ## Conflicts
 
-Sometimes you and your collaborators might change the same parameter on the same node. In those cases, Noodl doesn't know which change to apply and will ask you to resolve the conflicts.
+Sometimes you and your collaborators might change the same parameter on the same node. In those cases, Fluxscape doesn't know which change to apply and will ask you to resolve the conflicts.
 
 <div className="ndl-image-with-background l">
 
@@ -138,7 +116,7 @@ Create a branch by clicking the '+' icon in the version control panel's branch d
 
 </div>
 
-After a branch has been created Noodl will switch to the new branch. Any changes in your project that weren't pushed will be moved to this new branch.
+After a branch has been created Fluxscape will switch to the new branch. Any changes in your project that weren't pushed will be moved to this new branch.
 
 Changes you push will now belong to the new branch, and won't affect the other branches.
 
@@ -166,7 +144,7 @@ Changes from one branch can be merged into another branch. In this example, the 
 
 </div>
 
-Clicking "Merge into main" will show a preview of the changes that are being merged in. Noodl is visualizing the changes as they will look after the merge has been done.
+Clicking "Merge into main" will show a preview of the changes that are being merged in. Fluxscape is visualizing the changes as they will look after the merge has been done.
 
 <div className="ndl-image-with-background l">
 

@@ -438,20 +438,20 @@ const guides = [
     items: [
       {
         type: 'doc',
-        label: 'Version Control',
-        id: 'guides/collaboration/version-control',
+        label: 'Setup Version Control',
+        id: 'guides/collaboration/setup-version-control',
         imageUrl: '/img/featured-content-images/basic.png',
         description:
           'Learn how to use Noodls powerful version control features based on Git',
       },
       {
         type: 'doc',
-        label: 'Migrating from Noodl hosted Git',
-        id: 'guides/collaboration/migrating-from-noodl-hosted-git',
+        label: 'Using Version Control',
+        id: 'guides/collaboration/version-control',
         imageUrl: '/img/featured-content-images/basic.png',
         description:
-          'Projects created with closed source Noodl need to be migrated for collaboration to work',
-      },
+          'Learn how to use Noodls powerful version control features based on Git',
+      }
     ],
   },
   {
