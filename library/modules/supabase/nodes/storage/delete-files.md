@@ -2,11 +2,11 @@
 hide_title: true
 ---
 
-{/_##head##_/}
+{/*##head##*/}
 
 # Supabase Delete Files
 
-{/_##head##_/}
+{/*##head##*/}
 
 This is based on the [Supabase Client SDK - Delete files in a bucket](https://supabase.com/docs/reference/javascript/storage-from-remove).
 

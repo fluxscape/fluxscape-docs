@@ -2,11 +2,11 @@
 hide_title: true
 ---
 
-{/_##head##_/}
+{/*##head##*/}
 
 # Supabase Retrieve Public File URLs
 
-{/_##head##_/}
+{/*##head##*/}
 
 This is based on the [Supabase Client SDK - Retrieve public URL](https://supabase.com/docs/reference/javascript/storage-from-getpublicurl).
 
