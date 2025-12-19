@@ -36,61 +36,17 @@ The default format is this:
 
 ### Examples
 
-#### Standard Date Format:
+Here is a list of example formats.
 
-```
-{year}-{month}-{date}
-```
-
-Output: 2024-05-24
-
-#### Full Date and Time:
-
-```
-{year}-{month}-{date} {hours}:{minutes}:{seconds}
-```
-
-Output: 2024-05-24 14:30:15
-
-#### Short Month Name with Date:
-
-```
-{date}-{monthShort}-{year}
-```
-
-Output: 24-May-2024
-
-#### Time Only:
-
-```
-{hours}:{minutes}:{seconds}
-```
-
-Output: 14:30:15
-
-#### Date and Time with Short Month:
-
-```
-{date}/{monthShort}/{year} {hours}:{minutes}
-```
-
-Output: 24/May/2024 14:30
-
-#### Year and Month Only:
-
-```
-{year}/{month}
-```
-
-Output: 2024/05
-
-#### Full Date in Slashes:
-
-```
-{date}/{month}/{year}
-```
-
-Output: 24/05/2024
+| Output | Format |
+| - | - |
+| 2024-05-24 | `{year}-{month}-{date}` |
+| 2024-05-24 14:30:15 | `{year}-{month}-{date} {hours}:{minutes}:{seconds}` |
+| 24-May-2024 | `{date}-{monthShort}-{year}` |
+| 14:30:15 | `{hours}:{minutes}:{seconds}` |
+| 24/May/2024 14:30 | `{date}/{monthShort}/{year} {hours}:{minutes}` |
+| 2024/05 | `{year}/{month}` |
+| 24/05/2024 | `{date}/{month}/{year}` |
 
 ## Inputs
 
