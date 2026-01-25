@@ -2,27 +2,32 @@
 hide_title: true
 ---
 
-{/*##head##*/}
-
 # Create New Record
+<br />
+Creates a new record in a specified Supabase table.
 
-The Create New Record node creates a new record in a specified table. You can define its field values and optionally set access control rules to manage who can read or write the record.
+<div className="ndl-image-with-background l">
+  ![Create New Record node](../../fs-sb-create-record.png)
+</div>
 
-{/*##head##*/}
+The Create New Record node inserts a new row into a selected table in your connected Supabase database. You define the field values either directly in the property panel or dynamically by connecting inputs from other nodes.
 
-This is based on the [Supabase Client SDK - Insert data](https://supabase.com/docs/reference/javascript/insert).
+This node is commonly used for creating application data such as users, orders, content items, or any custom domain objects defined in your database schema. Insert operations respect Supabase Row Level Security (RLS) policies and the authentication context of the current user.
+
+This functionality is based on the Supabase Client SDK insert method. For reference, see  
+[Supabase Client SDK – Insert data](https://supabase.com/docs/reference/javascript/insert).
 
 ## Inputs
 
 <div className="ndl-table-35-65">
 
-| Data                                         | Type | Description                       |
-| -------------------------------------------- | ---- | --------------------------------- |
-| <span className="ndl-data">Table Name</span> | enum | List of all the available tables. |
+| Data                                         | Type | Description |
+| -------------------------------------------- | ---- | ----------- |
+| <span className="ndl-data">Table Name</span> | enum | The table where the new record will be created. |
 
 </div>
 
-Under the group "Data" all the table fields will be, and are designed to both be exist dynamically in the property panel (for supported types) and by making a connection.
+Under the **Data** group, all available fields for the selected table are exposed. These fields can be set directly in the property panel for supported types or populated dynamically through node connections.
 
 ## Outputs
 
@@ -30,15 +35,15 @@ Under the group "Data" all the table fields will be, and are designed to both be
 
 | Data                                          | Type    | Description |
 | --------------------------------------------- | ------- | ----------- |
-| <span className="ndl-data">Object ID</span>   | string  |             |
-| <span className="ndl-data">Success</span>     | signal  |             |
-| <span className="ndl-data">Failure</span>     | signal  |             |
-| <span className="ndl-data">Finally</span>     | signal  |             |
-| <span className="ndl-data">Is Fetching</span> | boolean |             |
-| <span className="ndl-data">Is Fetched</span>  | boolean |             |
-| <span className="ndl-data">Status</span>      | string  |             |
-| <span className="ndl-data">Is Success</span>  | boolean |             |
-| <span className="ndl-data">Is Error</span>    | boolean |             |
-| <span className="ndl-data">Error Text</span>  | string  |             |
+| <span className="ndl-data">Object ID</span>   | string  | Internal identifier for this insert operation. |
+| <span className="ndl-data">Success</span>     | signal  | Triggered when the record is successfully created. |
+| <span className="ndl-data">Failure</span>     | signal  | Triggered if the insert operation fails. |
+| <span className="ndl-data">Finally</span>     | signal  | Triggered after the operation completes, regardless of outcome. |
+| <span className="ndl-data">Is Fetching</span> | boolean | True while the insert request is in progress. |
+| <span className="ndl-data">Is Fetched</span>  | boolean | True once the request has completed. |
+| <span className="ndl-data">Status</span>      | string  | Status returned from the insert operation. |
+| <span className="ndl-data">Is Success</span>  | boolean | True if the record was created successfully. |
+| <span className="ndl-data">Is Error</span>    | boolean | True if an error occurred. |
+| <span className="ndl-data">Error Text</span>  | string  | Error message returned by Supabase, if any. |
 
 </div>
