@@ -3,7 +3,7 @@ hide_title: true
 ---
 
 # Call Edge Function
-<br />
+
 Calls a specific Supabase Edge Function by name and sends an optional request body.
 
 <div className="ndl-image-with-background l">

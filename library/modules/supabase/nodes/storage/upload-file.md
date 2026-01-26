@@ -3,7 +3,7 @@ hide_title: true
 ---
 
 # Supabase Upload File
-<br />
+
 Uploads a file to an existing Supabase Storage bucket.
 
 <div className="ndl-image-with-background l">

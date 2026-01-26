@@ -3,7 +3,7 @@ hide_title: true
 ---
 
 # Create New Record
-<br />
+
 Creates a new record in a specified Supabase table.
 
 <div className="ndl-image-with-background l">

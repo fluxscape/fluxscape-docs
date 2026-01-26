@@ -3,7 +3,7 @@ hide_title: true
 ---
 
 # Supabase Delete Files
-<br />
+
 Deletes one or more files from a Supabase Storage bucket.
 
 <div className="ndl-image-with-background l">

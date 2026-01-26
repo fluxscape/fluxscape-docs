@@ -3,7 +3,7 @@ hide_title: true
 ---
 
 # Download File
-<br />
+
 Downloads a file from a Supabase Storage bucket.
 
 <div className="ndl-image-with-background l">

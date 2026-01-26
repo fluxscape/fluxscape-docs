@@ -3,7 +3,7 @@ hide_title: true
 ---
 
 # Supabase Client Event Delete Records
-<br />
+
 Emits a signal when one or more records are deleted by the client in Supabase.
 
 <div className="ndl-image-with-background l">

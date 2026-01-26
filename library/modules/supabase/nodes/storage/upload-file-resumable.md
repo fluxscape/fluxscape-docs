@@ -3,7 +3,7 @@ hide_title: true
 ---
 
 # Supabase Upload File (Resumable)
-<br />
+
 Uploads a file to Supabase Storage using resumable upload support.
 
 <div className="ndl-image-with-background l">

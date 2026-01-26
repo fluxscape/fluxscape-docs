@@ -3,7 +3,7 @@ hide_title: true
 ---
 
 # Supabase Retrieve Public File URLs
-<br />
+
 Generates public URLs for one or more files stored in a Supabase Storage bucket.
 
 <div className="ndl-image-with-background l">

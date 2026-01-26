@@ -3,7 +3,7 @@ hide_title: true
 ---
 
 # Supabase Realtime Broadcast Message
-<br />
+
 Broadcasts a message to a Supabase Realtime channel so other connected clients can react immediately.
 
 <div className="ndl-image-with-background l">

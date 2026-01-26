@@ -3,7 +3,7 @@ hide_title: true
 ---
 
 # Supabase Call a Postgres Function
-<br />
+
 Calls a Postgres function (RPC) defined in your Supabase database.
 
 The Supabase Call a Postgres Function node allows you to execute a Postgres function directly on the database. This is commonly used for encapsulating complex queries, enforcing business logic close to the data, or performing operations that are difficult or inefficient to express using standard CRUD nodes.

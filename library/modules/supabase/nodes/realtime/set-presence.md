@@ -3,7 +3,7 @@ hide_title: true
 ---
 
 # Supabase Realtime Set Presence
-<br />
+
 Sets the presence state for the current user on a Supabase Realtime channel.
 
 <div className="ndl-image-with-background l">

@@ -3,7 +3,7 @@ hide_title: true
 ---
 
 # Supabase Client Event Create Record
-<br />
+
 Emits a signal when a record is created by the client in Supabase.
 
 <div className="ndl-image-with-background l">

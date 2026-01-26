@@ -5,7 +5,7 @@ hide_title: true
 {/*##head##*/}
 
 # Log In
-<br />
+
 Logs in an existing user using an email and password or a phone number and password.
 
 <div className="ndl-image-with-background l">

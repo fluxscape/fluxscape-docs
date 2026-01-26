@@ -3,7 +3,7 @@ hide_title: true
 ---
 
 # Supabase Realtime Subscribe To Channel
-<br />
+
 Subscribes the client to a Supabase Realtime channel to receive real-time events.
 
 <div className="ndl-image-with-background l">

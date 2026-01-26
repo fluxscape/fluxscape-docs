@@ -5,7 +5,7 @@ hide_title: true
 {/*##head##*/}
 
 # Log Out
-<br />
+
 Logs out the currently authenticated user from the connected Supabase project.
 
 <div className="ndl-image-with-background l">

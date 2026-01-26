@@ -5,7 +5,7 @@ hide_title: true
 {/*##head##*/}
 
 # User
-<br />
+
 Returns the currently authenticated user from the active Supabase session.
 
 <div className="ndl-image-with-background l">
