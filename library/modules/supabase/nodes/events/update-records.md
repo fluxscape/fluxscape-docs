@@ -2,9 +2,13 @@
 hide_title: true
 ---
 
+{/*##head##*/}
+
 # Supabase Client Event Update Records
 
 Emits a signal when one or more records are updated by the client in Supabase.
+
+{/*##main##*/}
 
 <div className="ndl-image-with-background l">
   ![Supabase Client Event Update Records node](../../fs-sb-client-update-record.png)

@@ -2,9 +2,13 @@
 hide_title: true
 ---
 
+{/*##head##*/}
+
 # Supabase Realtime Broadcast Message
 
 Broadcasts a message to a Supabase Realtime channel so other connected clients can react immediately.
+
+{/*##main##*/}
 
 <div className="ndl-image-with-background l">
   ![Realtime Broadcast Message node](../../fs-sb-call-broadcast-realtime.png)

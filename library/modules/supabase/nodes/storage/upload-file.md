@@ -2,9 +2,13 @@
 hide_title: true
 ---
 
+{/*##head##*/}
+
 # Supabase Upload File
 
 Uploads a file to an existing Supabase Storage bucket.
+
+{/*##main##*/}
 
 <div className="ndl-image-with-background l">
   ![Supabase Upload File node](../../fs-sb-upload-file.png)

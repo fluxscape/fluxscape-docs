@@ -2,9 +2,13 @@
 hide_title: true
 ---
 
+{/*##head##*/}
+
 # Supabase Realtime Set Presence
 
 Sets the presence state for the current user on a Supabase Realtime channel.
+
+{/*##main##*/}
 
 <div className="ndl-image-with-background l">
   ![Realtime Set Presence node](../../fs-sb-set-presence.png)

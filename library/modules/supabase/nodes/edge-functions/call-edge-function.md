@@ -2,9 +2,13 @@
 hide_title: true
 ---
 
+{/*##head##*/}
+
 # Call Edge Function
 
 Calls a specific Supabase Edge Function by name and sends an optional request body.
+
+{/*##main##*/}
 
 <div className="ndl-image-with-background l">
   ![Call Edge Function node](../../fs-sb-call-function.png)

@@ -2,9 +2,13 @@
 hide_title: true
 ---
 
+{/*##head##*/}
+
 # Supabase Realtime Subscribe To Channel
 
 Subscribes the client to a Supabase Realtime channel to receive real-time events.
+
+{/*##main##*/}
 
 <div className="ndl-image-with-background l">
   ![Realtime Subscribe To Channel node](../../fs-sb-subscribe-channel.png)

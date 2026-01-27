@@ -2,9 +2,13 @@
 hide_title: true
 ---
 
+{/*##head##*/}
+
 # Supabase Client Event Delete Records
 
 Emits a signal when one or more records are deleted by the client in Supabase.
+
+{/*##main##*/}
 
 <div className="ndl-image-with-background l">
   ![Supabase Client Event Delete Records node](../../fs-sb-client-delete-record.png)

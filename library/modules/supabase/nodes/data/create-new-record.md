@@ -2,6 +2,8 @@
 hide_title: true
 ---
 
+{/*##head##*/}
+
 # Create New Record
 
 Creates a new record in a specified Supabase table.
@@ -16,6 +18,8 @@ This node is commonly used for creating application data such as users, orders, 
 
 This functionality is based on the Supabase Client SDK insert method. For reference, see  
 [Supabase Client SDK – Insert data](https://supabase.com/docs/reference/javascript/insert).
+
+{/*##head##*/}
 
 ## Inputs
 

@@ -2,6 +2,8 @@
 hide_title: true
 ---
 
+{/*##head##*/}
+
 # Supabase Call a Postgres Function
 
 Calls a Postgres function (RPC) defined in your Supabase database.
@@ -14,3 +16,5 @@ The node returns the raw result of the function execution. If the function retur
 
 This functionality is based on the Supabase Client SDK RPC method. For reference, see  
 [Supabase Client SDK – Call a Postgres function](https://supabase.com/docs/reference/javascript/rpc).
+
+{/*##head##*/}

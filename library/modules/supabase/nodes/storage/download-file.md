@@ -2,9 +2,13 @@
 hide_title: true
 ---
 
+{/*##head##*/}
+
 # Download File
 
 Downloads a file from a Supabase Storage bucket.
+
+{/*##main##*/}
 
 <div className="ndl-image-with-background l">
   ![Supabase Download File node](../../fs-sb-download-file.png)

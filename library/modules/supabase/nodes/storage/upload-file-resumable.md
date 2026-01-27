@@ -2,9 +2,13 @@
 hide_title: true
 ---
 
+{/*##head##*/}
+
 # Supabase Upload File (Resumable)
 
 Uploads a file to Supabase Storage using resumable upload support.
+
+{/*##main##*/}
 
 <div className="ndl-image-with-background l">
   ![Supabase Upload File (Resumable) node](../../fs-sb-resumable-upload.png)

@@ -2,9 +2,13 @@
 hide_title: true
 ---
 
+{/*##head##*/}
+
 # Supabase Client Event Create Record
 
 Emits a signal when a record is created by the client in Supabase.
+
+{/*##main##*/}
 
 <div className="ndl-image-with-background l">
   ![Supabase Client Event Create Record node](../../fs-sb-client-create-record.png)

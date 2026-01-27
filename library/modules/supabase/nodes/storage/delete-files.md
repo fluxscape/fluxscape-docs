@@ -2,9 +2,13 @@
 hide_title: true
 ---
 
+{/*##head##*/}
+
 # Supabase Delete Files
 
 Deletes one or more files from a Supabase Storage bucket.
+
+{/*##main##*/}
 
 <div className="ndl-image-with-background l">
   ![Supabase Delete Files node](../../fs-sb-delete-files.png)

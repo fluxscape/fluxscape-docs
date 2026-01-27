@@ -2,9 +2,13 @@
 hide_title: true
 ---
 
+{/*##head##*/}
+
 # Supabase Retrieve Public File URLs
 
 Generates public URLs for one or more files stored in a Supabase Storage bucket.
+
+{/*##main##*/}
 
 <div className="ndl-image-with-background l">
   ![Supabase Retrieve Public File URLs node](../../fs-sb-retrieve-public-file-url.png)
