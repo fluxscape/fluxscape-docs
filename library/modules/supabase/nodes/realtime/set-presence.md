@@ -20,5 +20,4 @@ Presence state is ephemeral and exists only while the client is connected to the
 
 This functionality is based on the Supabase Realtime presence API. Presence updates are broadcast to all clients subscribed to the same channel, allowing UIs to stay in sync as users join, update their state, or leave.
 
-For reference, see 
-[Supabase Realtime – Presence](https://supabase.com/docs/guides/realtime/presence).
+For reference, see [Supabase Realtime – Presence](https://supabase.com/docs/guides/realtime/presence).
