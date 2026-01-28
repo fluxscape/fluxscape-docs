@@ -8,7 +8,7 @@ hide_title: true
 
 The Update Records node modifies an existing record in your Supabase table. You specify which record to update and which fields to change.
 
-{/*##head##*/}
+{/*##main##*/}
 
 This is based on the [Supabase Client SDK - Update data](https://supabase.com/docs/reference/javascript/update).
 
