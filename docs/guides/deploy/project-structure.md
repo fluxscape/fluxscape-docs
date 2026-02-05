@@ -5,25 +5,19 @@ hide_title: true
 
 # Project Structure
 
-You can find the project folders at this path:
+## Lessons
+
+When doing the lessons a project is created locally saving the state of the lesson and the changes. When having any issues of opening/resting etc issues you can delete the lesson and restart it.
 
 Windows Path:
 ```
-%AppData%\Roaming\Noodl\projects
+%AppData%\Fluxscape\lessons
 ```
 
 MacOS Path:
 ```
-~/Library/Application Support/Noodl/projects
+~/Library/Application Support/Fluxscape/lessons
 ```
-
-You can also open the project via this Button inside Noodl, in the project settings.
-
-<div className="ndl-image-with-background l">
-
-![](/docs/guides/deploy/open_project_folder.png)
-
-</div>
 
 ## What is deployed?
 
@@ -45,3 +39,25 @@ List of a few folders that are ignored:
 _These lists might not be complete._
 
 When deploying the app Noodl will also add a few new files for example React library.
+
+## Legacy Noodl projects
+
+You can find the project folders at this path:
+
+Windows Path:
+```
+%AppData%\Noodl\projects
+```
+
+MacOS Path:
+```
+~/Library/Application Support/Noodl/projects
+```
+
+You can also open the project via this Button inside Noodl, in the project settings.
+
+<div className="ndl-image-with-background l">
+
+![](/docs/guides/deploy/open_project_folder.png)
+
+</div>
