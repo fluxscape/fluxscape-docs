@@ -38,6 +38,7 @@ When doing the editor Lessons there are a few shortcuts. These are designed to b
 | CtrlCmd + P                     | Open Parse Dashboard in the default browser for the active Cloud Service.                                            |
 | CtrlCmd + Shift + R             | Open the DevTools for the cloud functions.                                                                           |
 | CtrlCmd + L                     | Focus the preview address bar.                                                                                       |
+| CtrlCmd + E                     | Open the Editor DevTools.                                                                                            |
 
 ### Preview
 
